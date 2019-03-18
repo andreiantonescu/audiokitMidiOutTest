@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1900439B486342D31AFB0624 /* Pods_midiOutTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD5A03E5DA26D034FDBD068 /* Pods_midiOutTest.framework */; };
 		D93626AD224012BF00B528AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93626AC224012BF00B528AC /* AppDelegate.swift */; };
 		D93626AF224012BF00B528AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93626AE224012BF00B528AC /* ViewController.swift */; };
 		D93626B2224012BF00B528AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93626B0224012BF00B528AC /* Main.storyboard */; };
 		D93626B4224012C100B528AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93626B3224012C100B528AC /* Assets.xcassets */; };
 		D93626B7224012C100B528AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93626B5224012C100B528AC /* LaunchScreen.storyboard */; };
+		D93626BF22401EAA00B528AC /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93626BE22401EAA00B528AC /* AudioEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E81FA0D8A04D3262EB5902B /* Pods-midiOutTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-midiOutTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-midiOutTest/Pods-midiOutTest.debug.xcconfig"; sourceTree = "<group>"; };
+		63569511F54D6C9E9D0735D9 /* Pods-midiOutTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-midiOutTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-midiOutTest/Pods-midiOutTest.release.xcconfig"; sourceTree = "<group>"; };
+		7FD5A03E5DA26D034FDBD068 /* Pods_midiOutTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_midiOutTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93626A9224012BF00B528AC /* midiOutTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = midiOutTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93626AC224012BF00B528AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D93626AE224012BF00B528AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		D93626B3224012C100B528AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D93626B6224012C100B528AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D93626B8224012C100B528AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D93626BE22401EAA00B528AC /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1900439B486342D31AFB0624 /* Pods_midiOutTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56861A6BBB3670ADDFF75321 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FD5A03E5DA26D034FDBD068 /* Pods_midiOutTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62EEDB66837BE7FF845D77C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E81FA0D8A04D3262EB5902B /* Pods-midiOutTest.debug.xcconfig */,
+				63569511F54D6C9E9D0735D9 /* Pods-midiOutTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D93626A0224012BF00B528AC = {
 			isa = PBXGroup;
 			children = (
 				D93626AB224012BF00B528AC /* midiOutTest */,
 				D93626AA224012BF00B528AC /* Products */,
+				62EEDB66837BE7FF845D77C0 /* Pods */,
+				56861A6BBB3670ADDFF75321 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,7 @@
 			children = (
 				D93626AC224012BF00B528AC /* AppDelegate.swift */,
 				D93626AE224012BF00B528AC /* ViewController.swift */,
+				D93626BE22401EAA00B528AC /* AudioEngine.swift */,
 				D93626B0224012BF00B528AC /* Main.storyboard */,
 				D93626B3224012C100B528AC /* Assets.xcassets */,
 				D93626B5224012C100B528AC /* LaunchScreen.storyboard */,
@@ -71,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D93626BB224012C100B528AC /* Build configuration list for PBXNativeTarget "midiOutTest" */;
 			buildPhases = (
+				7F6A127DB098C0C65CFB1333 /* [CP] Check Pods Manifest.lock */,
 				D93626A5224012BF00B528AC /* Sources */,
 				D93626A6224012BF00B528AC /* Frameworks */,
 				D93626A7224012BF00B528AC /* Resources */,
@@ -96,6 +124,11 @@
 				TargetAttributes = {
 					D93626A8224012BF00B528AC = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -130,11 +163,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F6A127DB098C0C65CFB1333 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-midiOutTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D93626A5224012BF00B528AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93626BF22401EAA00B528AC /* AudioEngine.swift in Sources */,
 				D93626AF224012BF00B528AC /* ViewController.swift in Sources */,
 				D93626AD224012BF00B528AC /* AppDelegate.swift in Sources */,
 			);
@@ -280,9 +339,11 @@
 		};
 		D93626BC224012C100B528AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E81FA0D8A04D3262EB5902B /* Pods-midiOutTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59CBSFM436;
 				INFOPLIST_FILE = midiOutTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +358,11 @@
 		};
 		D93626BD224012C100B528AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63569511F54D6C9E9D0735D9 /* Pods-midiOutTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59CBSFM436;
 				INFOPLIST_FILE = midiOutTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
