@@ -13,6 +13,8 @@
 		D93626B4224012C100B528AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93626B3224012C100B528AC /* Assets.xcassets */; };
 		D93626B7224012C100B528AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93626B5224012C100B528AC /* LaunchScreen.storyboard */; };
 		D93626BF22401EAA00B528AC /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93626BE22401EAA00B528AC /* AudioEngine.swift */; };
+		D97E96F7226CEA4900880687 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97E96F5226CEA4900880687 /* AudioKit.framework */; };
+		D97E96F8226CEA4900880687 /* AudioKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97E96F6226CEA4900880687 /* AudioKitUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D93626B6224012C100B528AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D93626B8224012C100B528AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D93626BE22401EAA00B528AC /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		D97E96F5226CEA4900880687 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = "../AudioKit/Frameworks/AudioKit-iOS/AudioKit.framework"; sourceTree = "<group>"; };
+		D97E96F6226CEA4900880687 /* AudioKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKitUI.framework; path = "../AudioKit/Frameworks/AudioKit-iOS/AudioKitUI.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97E96F8226CEA4900880687 /* AudioKitUI.framework in Frameworks */,
+				D97E96F7226CEA4900880687 /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,8 @@
 		D93626A0224012BF00B528AC = {
 			isa = PBXGroup;
 			children = (
+				D97E96F5226CEA4900880687 /* AudioKit.framework */,
+				D97E96F6226CEA4900880687 /* AudioKitUI.framework */,
 				D93626AB224012BF00B528AC /* midiOutTest */,
 				D93626AA224012BF00B528AC /* Products */,
 			);
@@ -293,14 +301,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59CBSFM436;
+				FRAMEWORK_SEARCH_PATHS = "/Users/andreiantonescu/Documents/AudioKit/Frameworks/AudioKit-iOS/";
 				INFOPLIST_FILE = midiOutTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andreiantonescu.midiOutTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -311,14 +322,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59CBSFM436;
+				FRAMEWORK_SEARCH_PATHS = "/Users/andreiantonescu/Documents/AudioKit/Frameworks/AudioKit-iOS/";
 				INFOPLIST_FILE = midiOutTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andreiantonescu.midiOutTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
